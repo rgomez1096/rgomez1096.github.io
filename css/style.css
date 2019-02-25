@@ -197,13 +197,13 @@ h1, h2, h3, h4, h5, h6, figure {
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0); }
 
-#colorlib-counter,
-.colorlib-bg {
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative; }
-
+        #colorlib-counter,
+        .colorlib-bg {
+          background-size: cover;
+          background-position: top center;
+          background-repeat: no-repeat;
+          position: relative; }
+        
 .colorlib-video {
   overflow: hidden; }
   @media screen and (max-width: 768px) {
@@ -255,11 +255,11 @@ h1, h2, h3, h4, h5, h6, figure {
     -o-transform: scale(1.1);
     transform: scale(1.1); }
 
-#colorlib-hero {
-  height: 650px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
-  width: 100%;
-  float: left; }
+    #colorlib-hero {
+      height: 650px;
+      background: #fff url(../images/loader.gif) no-repeat center center;
+      width: 100%;
+      float: left; }
   #colorlib-hero .btn {
     font-size: 24px; }
     #colorlib-hero .btn.btn-primary {
