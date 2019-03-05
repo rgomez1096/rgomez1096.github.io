@@ -41,6 +41,19 @@ body {
       z-index: 101;
       background: rgba(0, 0, 0, 0.7);
       content: ""; }
+      #main-block-index{
+        float:right;
+        width:75%;
+        padding:15px;
+        box-sizing: border-box;
+    }
+    #main-block-semver{
+      float:right;
+      width:75%;
+      padding:15px;
+      box-sizing: border-box;
+  }
+
 
 a {
   color: #F6490D;
@@ -1391,3 +1404,5 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+ 
