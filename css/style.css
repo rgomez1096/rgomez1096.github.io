@@ -42,10 +42,11 @@ body {
       background: rgba(0, 0, 0, 0.7);
       content: ""; }
       #main-block-index{
-        float:right;
-        width:75%;
-        padding:15px;
+        float: right;
+        width:50px
+        padding-left;
         box-sizing: border-box;
+        text-align: center
     }
     #main-block-semver{
       float:right;
