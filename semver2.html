@@ -45,28 +45,38 @@
 		<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-				<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html"></a></div>
-						</div>
-						<div class="col-xs-10 text-right menu-1">
+			<div class="container">
+					<nav class="navbar navbar-inverse">
+				<nav class="colorlib-nav" role="navigation">
+						<div class="top-menu">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-2">
+								
+										<div id="colorlib-logo"><a href="index.html"></a></div>
+									</div>
+								
+								<div class="col-xs-10 text-right menu-1">
+										</div>
+									 </nav>
 								<ul class="nav nav-tabs" role="tablist">
-								<li><a href="semver.html">Semver</a></li>
-								<li><a href="HTTP.html">HTTP</a></li>
-								<li><a href="SEO.html">SEO</a></li>
-								<li><a href="utf-8.html">UTF-8</a></li>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="semver.html">Semver</a></li>
+										<li><a href="HTTP.html">HTTP</a></li>
+										<li><a href="SEO.html">SEO</a></li>
+										<li><a href="utf-8.html">UTF-8</a></li>
 								
 							</ul>
 						</div>
 					</div>
-					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						  More Info
-						  <span class="caret"></span>
-						</button>
+				</div>
+				<div class="container">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					  More Info
+					  <span class="caret"></span>
+					</button>
+				
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						  <li><a href="semver2.html">Why use Semver?</a></li>
 						  <li><a href="semver3.html">Bootstrap Uses Semver</a></li>
@@ -78,7 +88,7 @@
 					<div class="text-center">
 					<div id="colorlib-logo"><a href="index.html">Semantic Versioning</a></div>
 					</div>
-		</nav>
+				</div>
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -99,7 +109,10 @@
 					  <div class="container">
 				   <div class="text-center">
 						<h3 class="text-center">Why use <abbr title="Semantic Versioning">Semver</abbr>?</h3>
-						<p>Semantic versioning is useful in the way it conveys messages to developers and users of a software package or API by having pre-defined meanings behind the version numbers and the number positions. Versioning without guidelines basically means nothing. Moving to 3.4? Okay, cool. Why not 4? However, 1.3.8 shows that this is the first mayjor release, but there has been 3 minor versions that came with new features. There's also been 32 patches in this minor version, which shows there has been many bugs here. 
+						<p>Semantic versioning is useful in the way it conveys messages to developers and users of a software package or API by having pre-defined meanings behind the version numbers and the number positions. Versioning without guidelines basically means nothing. Moving to 3.4? Okay, cool. Why not 4? However, 1.3.8 shows that this is the first mayjor release, but there has been 3 minor versions that came with new features. There's also been 32 patches in this minor version, which shows there has been many bugs here. All in all, SemVer is a contract between the producers and consumers of packages that establishes how risky an upgrade is — that is, how likely it is that an upgrade will break something. The different digits that comprise a SemVer version number each have meaning, which is where the “semantic” part comes from.
+						There’s a great deal of nuance to the full semver specification but it takes just a few seconds to review the core idea.
+						A simple semver version number looks like this: 1.5.4. These three numbers, left to right, are called: major minor and patch versions. A more descriptive way to think of them is as:breaking feature and fix versions.
+						You release a major version when the new release will definitely break something in users’ code unless they change their code to adopt it. You release a minor version when you introduce a feature that adds functionality in a backwards-compatible way, i.e., you add a feature that doesn’t require users of the previous versions to change their code. You release a patch version when you make a backwards-compatible bug fix, like closing a security flaw or correcting the code to match documented behavior. By separating releases by risk, SemVer allows the consumer of the software to set rules about how to automatically pull in new versions.
 							 </p>
 							</div>
 

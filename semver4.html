@@ -45,28 +45,38 @@
 		<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-				<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html"></a></div>
-						</div>
-						<div class="col-xs-10 text-right menu-1">
+			<div class="container">
+					<nav class="navbar navbar-inverse">
+				<nav class="colorlib-nav" role="navigation">
+						<div class="top-menu">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-2">
+								
+										<div id="colorlib-logo"><a href="index.html"></a></div>
+									</div>
+								
+								<div class="col-xs-10 text-right menu-1">
+										</div>
+									 </nav>
 								<ul class="nav nav-tabs" role="tablist">
-								<li><a href="semver.html">Semver</a></li>
-								<li><a href="HTTP.html">HTTP</a></li>
-								<li><a href="SEO.html">SEO</a></li>
-								<li><a href="utf-8.html">UTF-8</a></li>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="semver.html">Semver</a></li>
+										<li><a href="HTTP.html">HTTP</a></li>
+										<li><a href="SEO.html">SEO</a></li>
+										<li><a href="utf-8.html">UTF-8</a></li>
 								
 							</ul>
 						</div>
 					</div>
-					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						  More Info
-						  <span class="caret"></span>
-						</button>
+				</div>
+				<div class="container">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					  More Info
+					  <span class="caret"></span>
+					</button>
+				
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						  <li><a href="semver2.html">Why use Semver?</a></li>
 						  <li><a href="semver3.html">Bootstrap uses Semver</a></li>
@@ -76,9 +86,9 @@
 						</ul>
 					  </div>
 					<div class="text-center">
-					<div id="colorlib-logo"><a href="index.html">What Applications use Semver?</a></div>
+					<div id="colorlib-logo"><a href="index.html">What Does Semver Do?</a></div>
 					</div>
-		</nav>
+		</div>
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -96,9 +106,10 @@
 						  </div>
 					  </li>
 					  <hr>
+					  <div class="container">
 				   <div class="text-center">
-						<h3 class="text-center">Semantic Versioning(Semver)</h3>
-						<p>Semantic Versioning (referred to, for short, as SemVer), is a versioning system that has been on the rise over the last few years. With new plugins, addons, extensions, and libraries being built every day, having a universal way of versioning software development projects is a good thing to help us keep track of what’s going on.</p>
+						<h3 class="text-center">How Does it Work?</h3>
+						<p>SemVer relies on bumping the correct component up at the right time. Therefore, determining which type of version you should be releasing is simple. If you are mostly fixing bugs, then this would be categorized as a patch, in which case you should bump z. If you are implementing new features in a backward-compatible way, then you will bump y because this is what’s called a minor version. On the other hand, if you implement new stuff that is likely to break the existing API, you need to bump x because it is a major version. Before deploying a major version, you usually go through a lot of work that need to be tested again and again to make sure everything’s okay. That’s typically the moment you’d like to have a pre-release. With SemVer, pre-releases can be defined by appending a hyphen and an identifier to a version. For example, a pre-release for version 1.0.0 could be 1.0.0-alpha.1. Then if another build is needed, it would become 1.0.0-alpha.2, and so on.</p>
 
 						
 				   

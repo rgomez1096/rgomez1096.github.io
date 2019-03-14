@@ -45,28 +45,38 @@
 		<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-				<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html"></a></div>
-						</div>
-						<div class="col-xs-10 text-right menu-1">
-							<ul class="nav nav-tabs" role="tablist">
-								<li><a href="semver.html">Semver</a></li>
-								<li><a href="HTTP.html">HTTP</a></li>
-								<li><a href="SEO.html">SEO</a></li>
-								<li><a href="utf-8.html">UTF-8</a></li>
+			<div class="container">
+					<nav class="navbar navbar-inverse">
+				<nav class="colorlib-nav" role="navigation">
+						<div class="top-menu">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-2">
+								
+										<div id="colorlib-logo"><a href="index.html"></a></div>
+									</div>
+								
+								<div class="col-xs-10 text-right menu-1">
+										</div>
+									 </nav>
+								<ul class="nav nav-tabs" role="tablist">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="semver.html">Semver</a></li>
+										<li><a href="HTTP.html">HTTP</a></li>
+										<li><a href="SEO.html">SEO</a></li>
+										<li><a href="utf-8.html">UTF-8</a></li>
 								
 							</ul>
 						</div>
 					</div>
-					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						  More Info
-						  <span class="caret"></span>
-						</button>
+				</div>
+				<div class="container">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					  More Info
+					  <span class="caret"></span>
+					</button>
+				
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						  <li><a href="HTTP2.html">What Does HTTP Do?</a></li>
 						  <li><a href="HTTP3.html">HTTP to HTTPS</a></li>
@@ -76,7 +86,7 @@
 						</ul>
 					  </div>
 					<div class="text-center"
-					<div id="colorlib-logo"><a href="index.html">HTTP?</a></div>
+					<div id="colorlib-logo"><a href="index.html">What You Should Be careful For</a></div>
 		
 		</div>
 		
@@ -89,9 +99,11 @@
 				</div>
 
 						<hr>
-						
-						<h3 class="text-center">What is HTTP?</h3>
-						<p class="text-center">HTTP stands for Hypertext Transfer Protocol. At it’s most basic, it allows for the communication between different systems. It’s most commonly used to transfer data from a web server to a browser in order to allow users to view web pages. It’s the protocol that was used for basically all early websites.</p>
+						<div class="container">
+						<h3 class="text-center">Concerns of Switching</h3>
+						<p class="text-center">
+							While there are many benefits to switching over from HTTP to HTTPS, there are still potential problems that you could run into when doing so. When it seems like making the switch would be a simple task you must now that it's not. It require a small mission, but don't freak out there is plenty of websites with list of concerns and tips for making the switch. Make sure you use relative URLs for any resources and do not forget to inform Google of the switch from HTTP to HTTPS. It might take quit a bit of time to fully migrate to HTTPS. However having a great advantage to make the switch is definitely worth it. I mean knowing that your site is secure as it can be is a level up for me. When you make the switch to https, you need to make sure that all variants of your site redirect to the correct https version. There has been some sites where perhaps the http://www version of a site redirects to the correct https page, but if you type in http:// without the www, you’ll end up on a non-secure page. It is important to make sure that no matter how someone tries to access your site, they end up on the correct https version. Another mess up I have witness before is when you have an https page, but you’re using images or scripts that are hosted on http pages, then you’ll still get the “non-secure” warning. To avoid this issue, when you switch to https you need to comb through every page of your site to make sure that this is not happening. One last suggestion is to make sure your certificate doesn't expire. If your site is running on https and your security certificate expires, then, when Google tries to send visitors to your site they’ll get the big full screen warning I mentioned above. That is not what you want people to see when coming to your website.
+						</p>
 			   	
 			   
 						<div class="row">

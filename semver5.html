@@ -45,28 +45,37 @@
 		<div class="colorlib-loader"></div>
 
 	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-				<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-2">
-							<div id="colorlib-logo"><a href="index.html"></a></div>
-						</div>
-						<div class="col-xs-10 text-right menu-1">
-								<ul class="nav nav-tabs" role="tablist">
-								<li><a href="semver.html">Semver</a></li>
-								<li><a href="HTTP.html">HTTP</a></li>
-								<li><a href="SEO.html">SEO</a></li>
-								<li><a href="utf-8.html">UTF-8</a></li>
+			<div class="container">
+					<nav class="navbar navbar-inverse">
+				<nav class="colorlib-nav" role="navigation">
+						<div class="top-menu">
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-2">
 								
+										<div id="colorlib-logo"><a href="index.html"></a></div>
+									</div>
+								
+								<div class="col-xs-10 text-right menu-1">
+										</div>
+									 </nav>
+								<ul class="nav nav-tabs" role="tablist">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="semver.html">Semver</a></li>
+										<li><a href="HTTP.html">HTTP</a></li>
+										<li><a href="SEO.html">SEO</a></li>
+										<li><a href="utf-8.html">UTF-8</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="dropdown">
-						<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-						  More Info
-						  <span class="caret"></span>
-						</button>
+				</div>
+				<div class="container">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					  More Info
+					  <span class="caret"></span>
+					</button>
+				
 						<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
 						  <li><a href="semver2.html">Why use Semver?</a></li>
 						  <li><a href="semver3.html">Bootstrap uses Semver</a></li>
@@ -76,9 +85,9 @@
 						</ul>
 					  </div>
 					<div class="text-center">
-					<div id="colorlib-logo"><a href="index.html">What Applications use Semver?</a></div>
+					<div id="colorlib-logo"><a href="index.html">Semver In Action</a></div>
 					</div>
-		</nav>
+				</div>
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
@@ -96,9 +105,10 @@
 						  </div>
 					  </li>
 					  <hr>
+					  <div class="container">
 				   <div class="text-center">
-						<h3 class="text-center">Semantic Versioning(Semver)</h3>
-						<p>A semver-compatibile version is built from three numbers separated by periods (.). The three numbers are referred to as major, minor and patch, and specified in that order. The combination of numbers represent an ordered version, where each of the three numbers are also ordered. A major version has a series of ordered minor versions, and a minor version has a series of ordered patch versions.</p>
+						<h3 class="text-center">The construction of <abbr title="Semantic Versioning">Semver</abbr></h3>
+						<p>A semver-compatibile version is built from three numbers separated by periods (.). The three numbers are referred to as major, minor and patch, and specified in that order. The combination of numbers represent an ordered version, where each of the three numbers are also ordered. A major version has a series of ordered minor versions, and a minor version has a series of ordered patch versions. When a major change is made then you know the entire version was changed meaning the past version will not be compatible with this one. Summary of the numbers, MAJOR version when you make incompatible API changes, MINOR version when you add functionality in a backwards-compatible manner, and PATCH version when you make backwards-compatible bug fixes. One thing to understand when using SemVer is that it starts at 0.1.0 and not at 0.0.1 like one would assume. If you think this through, it makes sense. You do not start with a patch, you start with a set of features as a first draft for your project, hence version 0.1.0.</p>
 
 						
 				   
