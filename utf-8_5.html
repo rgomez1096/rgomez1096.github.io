@@ -77,7 +77,7 @@
 						</ul>
 					  </div>
 					<div class="text-center">
-					<div id="colorlib-logo"><a href="index.html">UTF-8</a></div>
+					<div id="colorlib-logo"><a href="index.html">What's The Difference in UTF-8 & UTF-16?</a></div>
 				</div>
 		</nav>
 		<hr>
@@ -97,8 +97,9 @@
 				</div>
 				<hr>
 				<div class="container">
-				<h2 class="text-center">What is UTF-8?</h2>
-				<p class="text-center">UTF-8 (Unicode Transformation Format) was developed to solve compatibility problems with ASCII systems that couldn't understand Unicode.  It is an ingenious encoding method that allows for all the address space of Unicode but stores it in a compact, efficient, format that saves on space and doesn't break compatibility with older systems.</p>
+				<h2 class="text-center">UTF-8 or UTF-16?</h2>
+				<p class="text-center">Both can encode the same information: the full zillion-and-a-half characters defined by the Unicode standard. They just use different numbers of bits/bytes to do so, and because of that difference, they end up representing characters with different, although similar and easily translatable, character codes. UTF-8 uses a minimum of 1 8-bit byte to encode characters. For the 128 7-bit characters of the ASCII character set, it is backward-compatible with ASCII: a roman-alphabet ASCII text encoded in UTF-8 will display normally on a system that does not understand UTF-8. Accented characters are not part of ASCII and so they will all be more or less garbled. Beyond 1 byte, UTF-8 may use 2, 3 or 4 bytes to encode the rest of the Unicode character set. Because of the way it uses the first byte of multi-byte sequences, UTF-8 uses 3 bytes for some characters that require only 2 bytes in UTF-16. UTF-16 uses a minimum of 2 bytes/16 bits. This makes it incompatible with ASCII. Given an /A-Za-z/ text in UTF-16, a system that does not understand UTF-16 will make a mess of it (showing a null character before every single character).
+                    </p>
 				</div>
 						
 			  

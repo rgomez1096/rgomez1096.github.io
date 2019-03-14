@@ -77,7 +77,7 @@
 						</ul>
 					  </div>
 					<div class="text-center">
-					<div id="colorlib-logo"><a href="index.html">UTF-8</a></div>
+					<div id="colorlib-logo"><a href="index.html">Is UTF-8 similar to Unicode?</a></div>
 				</div>
 		</nav>
 		<hr>
@@ -97,8 +97,10 @@
 				</div>
 				<hr>
 				<div class="container">
-				<h2 class="text-center">What is UTF-8?</h2>
-				<p class="text-center">UTF-8 (Unicode Transformation Format) was developed to solve compatibility problems with ASCII systems that couldn't understand Unicode.  It is an ingenious encoding method that allows for all the address space of Unicode but stores it in a compact, efficient, format that saves on space and doesn't break compatibility with older systems.</p>
+				<h2 class="text-center">Unicode and UTF-8</h2>
+				<p class="text-center">UTF-8 is one of the three standard character encodings used to represent Unicode as computer text (the others being UTF-16 and UTF-32). Historically, text files were typically encoded as sequences of bytes where each byte represented one character. However, since a byte can only take one of 256 values, this is not possible for Unicode. The simplest Unicode encoding is UTF-32, which uses 4 bytes (or 32 bits) per character. However, this is inefficient in its usage of storage, memory and processing. Until 1996 it was thought (or hoped) that 2 bytes would be enough to represent every Unicode character, but then people realized just how many Chinese characters there are. As a result some languages such as JavaScript still use 2 bytes (UCS-2) to represent characters, which can cause issues when handling characters such as 😎😎. To fix this, UCS-2 was replaced by UTF-16, where some characters were represented by two two-byte codes rather than one. This makes string manipulation more complex (for example calculating the length of a string) but uses less space than UTF-32.
+                    UTF-8 is like UTF-16, except its codes are all one byte (8 bits) long, with characters represented by between one and four codes. Plain text (i.e. ASCII) characters are all represented by a single byte, in a manner identical to normal non-Unicode strings. This has the big advantage that legacy ASCII text is also valid UTF-8. Furthermore, the bytes representing ASCII are not used in the representation of any other characters, so legacy programs that search for those don't have to be updated. These advantages combined with the fact that UTF-8 is normally the most space efficient way to store Unicode text (especially for Western texts) means that most web pages these days are encoded in UTF-8.
+                    </p>
 				</div>
 						
 			  
